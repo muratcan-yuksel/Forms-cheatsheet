@@ -3,3 +3,7 @@
     flex-direction: column;
     width: 30vw;
 }
+.makeRow{
+    display:grid;
+   
+}
