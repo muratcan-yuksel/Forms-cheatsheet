@@ -58,7 +58,59 @@
                     Labels may include a for attribute. The value of the for attribute should be the same as the value of the id attribute on the form control the label corresponds to. Matching up the for and id attribute values ties the two elements together, allowing users to click on the <label> element to bring focus to the proper form control.</p>
                     <label for="username">Username</label>
                     <input type="text" name="username" id="username">
-                        
+                <p>If desired, the <label> element may wrap form controls, such as radio buttons or check boxes. Doing so allows omission of the for and id attributes.</p>
+                      <label>
+                        <input type="radio" name="day" value="Friday" checked> Friday
+                      </label>
+                      <label>
+                        <input type="radio" name="day" value="Saturday"> Saturday
+                      </label>
+                      <label>
+                        <input type="radio" name="day" value="Sunday"> Sunday
+                      </label>
+            <h2>Fieldset</h2>
+                <p>Fieldsets group form controls and labels into organized sections. Much like a < section> or other structural element, the < fieldset> is a block-level element that wraps related elements, specifically within a < form> element, for better organization. Fieldsets, by default, also include a border outline, which can be modified using CSS.</p>
+                     <fieldset>
+                        <label>
+                          Username
+                          <input type="text" name="username">
+                        </label>
+                        <label>
+                          Password
+                          <input type="text" name="password">
+                        </label>
+                      </fieldset>
+            <h2>Legend</h2>
+                <p>A legend provides a caption, or heading, for the < fieldset> element. The < legend> element wraps text describing the form controls that fall within the fieldset. The markup should include the < legend> element directly after the opening < fieldset> tag. On the page, the legend will appear within the top left part of the fieldset border.</p>
+                    <fieldset>
+                        <legend>Login</legend>
+                        <label>
+                        Username
+                        <input type="text" name="username">
+                        </label>
+                        <label>
+                        Password
+                        <input type="text" name="password">
+                        </label>
+                    </fieldset>
+            <h1>Form & Input Attributes</h1>
+            <h2>Disabled</h2>        
+                <label>
+                    Username
+                    <input type="text" name="username" disabled>
+                </label>
+            <h2>Placeholder</h2>
+                <p>The placeholder HTML5 attribute provides a hint or tip within the form control of an < input> or < textarea> element that disappears once the control is clicked in or gains focus. This is used to give users further information on how the form input should be filled in, for example, the email address format to use.</p>
+                    <label>
+                        Email Address
+                        <input type="email" name="email-address" placeholder="name@domain.com">
+                    </label>
+            <h2>Required</h2>
+                <label>
+                    Email Address
+                    <input type="email" name="email-address" required>
+                </label>
+              
               
 
 
