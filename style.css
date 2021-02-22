@@ -4,6 +4,9 @@
     width: 30vw;
 }
 .makeRow{
-    display:grid;
+    display:flex;
    
+}
+.eg{
+    border: 5px solid black;
 }
